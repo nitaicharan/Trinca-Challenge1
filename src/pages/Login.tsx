@@ -4,8 +4,6 @@ import "../styles/pages/login.scss";
 export const Login = () => {
     return (
         <section className="login">
-            <h1 className="login-title">Churras calendar</h1>
-
             <form className="login-form">
                 <div className="login__group">
                     <label className="login__group--label" htmlFor="login">Login</label>
@@ -16,12 +14,11 @@ export const Login = () => {
                     <label className="login__group--label" htmlFor="password">Password</label>
                     <input className="login__group--input" name="password" id="password" type="password" placeholder="password" />
                 </div>
+
+                <div className="login-button">
+                    <a className="btn btn--black btn-login">Login</a>
+                </div>
             </form>
-
-            <div className="login-button">
-                <a className="btn btn--black">Login</a>
-            </div>
-
         </section>
     );
 }
