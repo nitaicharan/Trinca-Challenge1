@@ -5,8 +5,8 @@
     src: url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap);
 }
 
-body {
+html {
     background-color: $color-primary;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0%) 0%, $color-primary),
-        url("/assets/images/background.svg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, $color-primary 50vh), url("/assets/images/background.svg");
+    background-repeat: repeat-x;
 }
