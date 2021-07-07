@@ -3,7 +3,7 @@
 .login {
     width: min(100vw, 65rem);
     margin: 0 auto;
-    padding: 0 177px;
+    padding: 0 2rem;
 
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@
         width: 100%;
 
         & > * + * {
-            margin-top: min(10vh, 4rem);
+            margin-top: min(7vh, 4rem);
         }
     }
 
@@ -45,7 +45,7 @@
     }
 
     &-button {
-        margin-top: min(10vh, 10rem);
+        margin-top: min(7vh, 10rem);
     }
 }
 
