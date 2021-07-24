@@ -1,5 +1,5 @@
-import { ChangeEvent, FormEvent, useState } from "react";
-import * as Service from "../services/AuthService";
+import { ChangeEvent, FormEvent, useContext, useState } from "react";
+import { AuthContext } from "../contexts/AuthContext";
 import "../styles/pages/login.scss";
 
 interface IProps {
@@ -7,10 +7,11 @@ interface IProps {
 
 export const Login = (props: IProps) => {
     const [state, setState] = useState({ email: '', password: '' })
+    const { logIn } = useContext(AuthContext);
 
     const onSubmitHandler = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        await Service.login({ ...state });
+        await logIn({ ...state });
     }
 
     const onChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
