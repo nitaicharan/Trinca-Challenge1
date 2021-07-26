@@ -1,13 +1,10 @@
-import { ChangeEvent, FormEvent, useContext, useState } from "react";
-import { AuthContext } from "../contexts/AuthContext";
+import { ChangeEvent, FormEvent, useState } from "react";
+import { useAuth } from "../hooks/useAuth";
 import "../styles/pages/login.scss";
 
-interface IProps {
-}
-
-export const Login = (props: IProps) => {
+export const Login = () => {
     const [state, setState] = useState({ email: '', password: '' })
-    const { logIn } = useContext(AuthContext);
+    const { logIn } = useAuth();
 
     const onSubmitHandler = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();

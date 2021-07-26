@@ -4,6 +4,7 @@ import { Header } from './layouts/Header';
 import { Detail } from './pages/Detail';
 import { List } from './pages/List';
 import { Login } from './pages/Login';
+import { PrivateRoute } from "./pages/PrivateRoute";
 
 function App() {
   return (
@@ -12,11 +13,12 @@ function App() {
         {/* TODO create a layout component and put header inside */}
         <Route path="*" component={Header} />
         <Switch>
-          <Route path="/list/:id" component={Detail} />
-          <Route path="/list" component={List} />
+          <PrivateRoute path="/list/:id"><Detail /></PrivateRoute>
+          <PrivateRoute path="/list"><List /></PrivateRoute>
           <Route path="/login" component={Login} />
           <Redirect from="*" to="/login" />
         </Switch>
+        {/* TODO crate a footer component */}
       </AuthContextProvider>
     </Router>
   );

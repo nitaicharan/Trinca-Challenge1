@@ -7,10 +7,7 @@ import { Barbecue } from '../interfaces/Barbecue';
 import { fetchDetail } from '../services/BarbecueService';
 import '../styles/pages/detail.scss';
 
-interface IProps extends Barbecue {
-}
-
-export const Detail = (props: IProps) => {
+export const Detail = () => {
     const [detail, setDetail] = useState<Barbecue>();
     let { id } = useParams<{ id: string }>();
 
