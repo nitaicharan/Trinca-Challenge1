@@ -1,4 +1,5 @@
 import { Card } from '../components/Card';
+import { NewCard } from '../components/NewCard';
 import '../styles/pages/list.scss';
 
 export const List = () => {
@@ -20,7 +21,7 @@ export const List = () => {
                 <Card />
             </div>
             <div className="list-card">
-                <Card />
+                <NewCard />
             </div>
         </main>
     );
