@@ -15,12 +15,6 @@ export const List = () => {
                 <Card />
             </div>
             <div className="list-card">
-                <Card />
-            </div>
-            <div className="list-card">
-                <Card />
-            </div>
-            <div className="list-card">
                 <NewCard />
             </div>
         </main>
