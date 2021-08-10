@@ -1,7 +1,8 @@
-import { createContext, ReactNode, useState } from 'react';
+import { createContext, ReactNode, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Authentication } from '../interfaces/Authentication';
 import * as AuthService from '../services/AuthService';
+import * as LocalStorageService from '../services/LocalStorageService';
 
 interface IAuthContext {
     authentication: Authentication | undefined,
@@ -15,8 +16,12 @@ interface AuthContextProviderProps {
 }
 
 export const AuthContextProvider = (props: AuthContextProviderProps) => {
-    const [authentication, setAuthentication] = useState<Authentication>();
+    const [authentication, setAuthentication] = useState<Authentication>(LocalStorageService.getAuth());
     const history = useHistory();
+
+    useEffect(() => {
+        authentication && LocalStorageService.saveAuth(authentication);
+    }, [authentication])
 
     const logIn = async (params: { email: string, password: string }) => AuthService.login(params)
         .then(setAuthentication)
