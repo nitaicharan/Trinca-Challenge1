@@ -1,23 +1,14 @@
 .list {
-    margin: 0 auto;
-    padding: 4rem;
-    width: min(100vw, 130rem);
-
     display: flex;
     gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-
-    background: #fafafa;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
-    border-radius: 4px;
 }
 
 .list-card {
     width: 35rem;
     height: 27rem;
-    transform: translateY(-30%);
 
     background: #ffffff;
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.06);

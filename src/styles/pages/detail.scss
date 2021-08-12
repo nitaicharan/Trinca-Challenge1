@@ -3,7 +3,7 @@
 .detail {
     margin: 0 auto;
     padding: 4rem;
-    width: min(100vw, 130rem);
+    width: min(100%, 130rem);
 
     background: #fafafa;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
@@ -29,6 +29,7 @@
 
         &--icon {
             height: 1em;
+            transform: translateY(6px);
         }
     }
 
