@@ -27,8 +27,7 @@ export const Detail = () => {
                         <img src={people} alt="" className="detail__amount--icon" /> {detail?.users.length ?? 0}
                     </span>
                     <span className="detail__amount--number">
-                        {/* FIXME add currency mask to price */}
-                        <img src={money} alt="" className="detail__amount--icon" />  {detail?.price}
+                        <img src={money} alt="" className="detail__amount--icon" /> $ {detail?.price}
                     </span>
                 </div>
             </div>

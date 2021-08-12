@@ -14,11 +14,7 @@ export const List = () => {
 
     return (
         <main className="list">
-            {list?.map(i => (
-                <div key={i.id} className="list-card">
-                    <Card {...i} />
-                </div>
-            ))}
+            {list?.map(i => (<div key={i.id} className="list-card"><Card {...i} /></div>))}
             <div className="list-card">
                 <NewCard />
             </div>

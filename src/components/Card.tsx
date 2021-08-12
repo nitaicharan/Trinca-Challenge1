@@ -25,7 +25,7 @@ export const Card = (props: IProps) => {
 
                     <div className="card__amount">
                         <span className="card__amount--result">
-                            <img src={money} alt="" className="card__amount--icon" /> {props.price}
+                            <img src={money} alt="" className="card__amount--icon" /> $ {props.price}
                         </span>
                     </div>
                 </div>
