@@ -40,11 +40,22 @@ To help you, we've created a prototype that you can use (or not) to design your 
 
 ## Development GitHub Pages
 ```
+...
+// Add this property in file package.json:
+{
+  "homepage": "http://nitaicharan.github.io/Trinca-Challenge1",
+}
+...
+```
+
+```
+yarn build
+
 git add -A
 git commit -m <tittle> <message>
-git push <remote> <branch>
-git subtree push --prefix <directory> <remote> gh-pages
-git push <remote> `git subtree split --prefix <directory> <branch>`:gh-pages --force
+git push origin main
+git subtree push --prefix build origin gh-pages
+git push origin `git subtree split --prefix build main`:gh-pages --force
 ```
 
 <!-- ALIAS README -->

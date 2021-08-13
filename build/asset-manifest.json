@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Trinca-Challenge1/static/css/main.3dfcc27a.chunk.css",
+    "main.js": "/Trinca-Challenge1/static/js/main.f3a0338b.chunk.js",
+    "main.js.map": "/Trinca-Challenge1/static/js/main.f3a0338b.chunk.js.map",
+    "runtime-main.js": "/Trinca-Challenge1/static/js/runtime-main.75347275.js",
+    "runtime-main.js.map": "/Trinca-Challenge1/static/js/runtime-main.75347275.js.map",
+    "static/js/2.62ceb216.chunk.js": "/Trinca-Challenge1/static/js/2.62ceb216.chunk.js",
+    "static/js/2.62ceb216.chunk.js.map": "/Trinca-Challenge1/static/js/2.62ceb216.chunk.js.map",
+    "index.html": "/Trinca-Challenge1/index.html",
+    "static/css/main.3dfcc27a.chunk.css.map": "/Trinca-Challenge1/static/css/main.3dfcc27a.chunk.css.map",
+    "static/js/2.62ceb216.chunk.js.LICENSE.txt": "/Trinca-Challenge1/static/js/2.62ceb216.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/Trinca-Challenge1/static/media/background.8377c84f.svg",
+    "static/media/icon_bbq.ac532158.svg": "/Trinca-Challenge1/static/media/icon_bbq.ac532158.svg",
+    "static/media/icon_money.d670e783.svg": "/Trinca-Challenge1/static/media/icon_money.d670e783.svg",
+    "static/media/icon_people.2feb883b.svg": "/Trinca-Challenge1/static/media/icon_people.2feb883b.svg",
+    "static/media/trinca.eca43859.svg": "/Trinca-Challenge1/static/media/trinca.eca43859.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.75347275.js",
+    "static/js/2.62ceb216.chunk.js",
+    "static/css/main.3dfcc27a.chunk.css",
+    "static/js/main.f3a0338b.chunk.js"
+  ]
+}
