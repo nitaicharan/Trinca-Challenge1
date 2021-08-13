@@ -17,21 +17,23 @@ export const Detail = () => {
 
     return (
         <main className="detail">
-            <div className="detail-titles">
-                <div className="detail__title">
-                    <h1 className="detail__title--date">{detail?.create_at}</h1>
-                    <span className="detail__title--description">{detail?.description}</span>
+            <div className="detail__background">
+                <div className="detail-titles">
+                    <div className="detail__title">
+                        <h1 className="detail__title--date">{detail?.create_at}</h1>
+                        <span className="detail__title--description">{detail?.description}</span>
+                    </div>
+                    <div className="detail__amount">
+                        <span className="detail__amount--number">
+                            <img src={people} alt="" className="detail__amount--icon" /> {detail?.users.length ?? 0}
+                        </span>
+                        <span className="detail__amount--number">
+                            <img src={money} alt="" className="detail__amount--icon" /> $ {detail?.price}
+                        </span>
+                    </div>
                 </div>
-                <div className="detail__amount">
-                    <span className="detail__amount--number">
-                        <img src={people} alt="" className="detail__amount--icon" /> {detail?.users.length ?? 0}
-                    </span>
-                    <span className="detail__amount--number">
-                        <img src={money} alt="" className="detail__amount--icon" /> $ {detail?.price}
-                    </span>
-                </div>
+                {detail?.users?.map(i => <Row key={i.id} {...i} />)}
             </div>
-            {detail?.users?.map(i => <Row key={i.id} {...i} />)}
         </main>
     );
 }

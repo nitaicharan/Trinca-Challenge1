@@ -1,17 +1,16 @@
 .app {
-    &__background {
+    &__background > *:not(.login,footer) {
         margin: 0 auto;
-        padding: 4rem;
+        margin-bottom: 9rem;
         width: min(100vw, 130rem);
 
-        & > * {
-            
-            &:not(.login, footer) {
-                transform: translateY(-30%);
-                background: #fafafa;
-                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
-                border-radius: 4px;
-            }
-        }
+        background: #fafafa;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.13);
+        border-radius: 4px;
+        padding: 4rem;
+    }
+
+    &__background > *:not(.login,footer) > * {
+        transform: translateY(-8rem);
     }
 }
